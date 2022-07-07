@@ -1,0 +1,96 @@
+body{
+	background-color: #f0f0f0;
+}
+nav {
+	background-color: #242424;
+	height: 70px;
+}
+nav ul li a{
+	font-size: 17px;
+	height: 70px;
+}
+nav ul li a:hover {
+	background-color: #007EA7;
+}
+.active-nav{
+	background-color: #007EA7;
+	text-decoration: underline;
+}
+
+.sidenav{
+	background-color: #242424;
+}
+#icon{
+	color: white;
+}
+span.flow-text{
+	display: block;
+	text-align: justify;
+	text-indent: 50px;
+}
+.li-active{
+	background-color: #007EA7;
+	text-decoration: underline;
+}
+/* CONTENT */
+.titulo h3{
+	margin-top: 20%;
+	border-bottom: 3px solid #007EA7;
+}
+
+/* COLLAPSIBLE */
+hr{
+	margin-top: 30px;
+}
+h3.about-work{
+	margin-top: 30px;
+}
+.collapsible-header{
+	font-size: 20px;
+	transition: .4s ease;
+}
+.collapsible-body span{
+	font-size: 18px;
+}
+.collapsible li.active .collapsible-header{
+	background-color: #007EA7;
+	color: white;
+}
+/* >>>>>>> ON HOVER */
+li:hover .collapsible-header{
+	background-color: #007EA7;
+	color: white;
+}
+
+/* DEV CONTENT */
+@media screen and (min-width: 1441px){
+	a.dev-contato{
+		position: absolute;
+		right: 45%;
+	}
+}
+@media screen and (max-width: 1440px) and (min-width: 951px){
+	a.dev-contato{
+		position: absolute;
+		right: 40%;
+	}
+}
+@media screen and (max-width: 950px){
+	a.dev-contato{
+		position: absolute;
+		right: clamp(25% ,30% , 35%);
+		bottom: 25px;
+	}
+}
+/* FOOTER */
+footer{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+}
+
+.footer-copyright{
+	color: white;
+	background-color: #161616 !important;
+}
